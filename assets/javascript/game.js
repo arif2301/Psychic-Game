@@ -21,7 +21,7 @@ var wins = 0;
 var losses = 0;
 var guessLeft =10;
 var youGuess = " ";
-youGuessText.textContent = "Press any letter to Start"; 
+youGuessText.textContent = "Guess what letter I am thinking of! You have 10 guesses. Press any letter to Start"; 
 var compChoice = choices [Math.floor (Math.random () * 26)];
 //var userGuess = " ";
 
