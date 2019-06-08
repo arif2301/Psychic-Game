@@ -20,7 +20,9 @@ var wins = 0;
 var losses = 0;
 var guessLeft = 9;
 var youGuess = " ";
-youGuessText.textContent = 9; 
+youGuessText.textContent = "Press any letter to restart"; 
+var compChoice = choices [Math.floor (Math.random () * 26)];
+//var userGuess = " ";
 
 // user strikes a letter
 document.onkeyup = function(event) 
@@ -29,18 +31,31 @@ document.onkeyup = function(event)
     var userGuess = event.key;
  
     //program picks a random letter
-    var compChoice = choices [Math.floor (Math.random () * 26)];
+    
     //console.log (choices[0], choices [5]);
     //console.log (Math.floor (Math.random () * 26));
-    //console.log ("computer", compChoice);
+    console.log ("computer", compChoice);
     console.log ("user", userGuess);
-    console.log (choices);
+    //console.log (choices);
     
     if (userGuess === compChoice) 
     {
         wins+=1 ;
         guessLeft = 9;
-        youGuessText.textContent = "Press any letter to restart"; 
+        youGuess = " ";
+        youGuessText.textContent = "you Won! Press any letter to restart"; 
+        compChoice = choices [Math.floor (Math.random () * 26)]
+        ;
+        console.log ("New Number", compChoice);
+    }
+
+    // if compchoice is not = userguess
+    if (userGuess !== compChoice)
+    {
+        guessLeft -=1;
+        console.log ("guess left", guessLeft);
+        youGuess += userGuess; 
+        youGuessText.textContent = "Your Guesses so far " + youGuess;
     }
 
     
