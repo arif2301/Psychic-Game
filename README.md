@@ -10,7 +10,7 @@ HTML, JAVASCRIPT and CSS were used to set this up
 
 ## Snapshot of the webpage:
 
-![](screenshots/photo3.PNG)
+![](screenshots/photo4.PNG)
 
 
 ## Guide to this project:
@@ -24,7 +24,7 @@ HTML, JAVASCRIPT and CSS were used to set this up
 
 
 * Step 3: Your wins and losses get are tracked during each session, the game automatically restarts once completed.
-![](screenshots/photo4.PNG)
+![](screenshots/photo5.PNG)
 
 
 
